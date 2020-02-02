@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Starting Strength Tracker</title>
+  </head>
+  <body>
+    <div id="settings__container" class="top">
+      <select name="Position" class="workout__position">
+        <option value="first">1</option>
+        <option value="second">2</option>
+        <option value="third">3</option>
+      </select>
+
+      <input type="text" placeholder="Workout Name" class="workout__name" />
+      <input
+        type="number"
+        placeholder="Starting weight"
+        class="workout__weight"
+      />
+      <input type="number" placeholder="Sets" class="workout__sets" />
+      <input type="number" placeholder="Reps" class="workout__reps" />
+
+      <button class="workout__input--add">Save</button>
+    </div>
+
+    <div class="settings__toggle">
+      <span
+        ><p>Settings</p>
+        <i class="material-icons">
+          keyboard_arrow_up
+        </i>
+      </span>
+    </div>
+
+    <div class="bottom">
+      <h3 class="workout__snapshot--desciption">Weight lifted last workout</h3>
+      <h3 class="weight__increase--desciption">Weight added this workout</h3>
+      <div class="snapshot__container" id="snapshot__container--1">
+        <h4 id="reps__sets--1" class="snapshot__reps--sets">3 x 5</h4>
+        <h1 id="weight__amount--1" class="snapshot__weight">175 lbs</h1>
+        <h3 id="workout__name--1" class="snapshot__workout">Overhead Press</h3>
+      </div>
+      <div class="snapshot__container" id="snapshot__container--2">
+        <h4 id="reps__sets--2" class="snapshot__reps--sets">3 x 5</h4>
+        <h1 id="weight__amount--2" class="snapshot__weight">195 lbs</h1>
+        <h3 id="workout__name--2" class="snapshot__workout">Bench</h3>
+      </div>
+      <div class="snapshot__container" id="snapshot__container--3">
+        <h4 id="reps__sets--3" class="snapshot__reps--sets">3 x 5</h4>
+        <h1 id="weight__amount--3" class="snapshot__weight">200 lbs</h1>
+        <h3 id="workout__name--3" class="snapshot__workout">Deadlift</h3>
+      </div>
+
+      <div
+        class="weight__increase--container"
+        id="weight__increase--container--1"
+      >
+        <button
+          id="increase__amount--1--first"
+          class="increase__amount"
+          value="5"
+        >
+          + 5 lbs
+        </button>
+        <button
+          id="increase__amount--2--first"
+          class="increase__amount"
+          value="10"
+        >
+          + 10 lbs
+        </button>
+        <button
+          id="increase__amount--3--first"
+          class="increase__amount"
+          value="15"
+        >
+          + 15 lbs
+        </button>
+      </div>
+      <div
+        class="weight__increase--container"
+        id="weight__increase--container--2"
+      >
+        <button
+          id="increase__amount--1--second"
+          class="increase__amount"
+          value="5"
+        >
+          + 5 lbs
+        </button>
+        <button
+          id="increase__amount--2--second"
+          class="increase__amount"
+          value="10"
+        >
+          + 10 lbs
+        </button>
+        <button
+          id="increase__amount--3--second"
+          class="increase__amount"
+          value="15"
+        >
+          + 15 lbs
+        </button>
+      </div>
+      <div
+        class="weight__increase--container"
+        id="weight__increase--container--3"
+      >
+        <button
+          id="increase__amount--1--third"
+          class="increase__amount"
+          value="5"
+        >
+          + 5 lbs
+        </button>
+        <button
+          id="increase__amount--2--third"
+          class="increase__amount"
+          value="10"
+        >
+          + 10 lbs
+        </button>
+        <button
+          id="increase__amount--3--third"
+          class="increase__amount"
+          value="15"
+        >
+          + 15 lbs
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
